@@ -81,7 +81,7 @@ export default function Footer({
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-0">
 
           {/* ── Coluna esquerda: logo + tagline ── */}
-          <div className="flex items-start gap-6 lg:w-80 shrink-0 border-b-2 lg:border-r-2 border-[#c9a96e]/40 pb-5 lg:pr-10">
+          <div className="flex items-start gap-6 lg:w-80 shrink-0 border-b-2 lg:border-b-0 lg:border-r-2 border-[#c9a96e]/40 pb-5 lg:pr-10">
             {/* Imagem do espelho */}
             <div className="shrink-0">
               {logoImage ? (
