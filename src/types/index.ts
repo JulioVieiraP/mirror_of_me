@@ -7,6 +7,7 @@ export interface SessionItem {
 }
 
 export interface SessionProps {
+  id?: string;
   title: string;
   description: string;
   buttonText: string;

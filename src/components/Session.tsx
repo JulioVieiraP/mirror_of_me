@@ -3,6 +3,7 @@ import { SessionProps } from '@/types';
 import Image from 'next/image';
 
 export default function Session({
+  id,
   title,
   description,
   buttonText,
@@ -14,6 +15,7 @@ export default function Session({
 
   return (
     <section
+      id={id}
       className="w-full py-16 px-4 sm:px-6 lg:px-8"
       style={{ backgroundColor: bgColor }}
     >
