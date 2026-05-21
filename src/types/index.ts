@@ -10,6 +10,7 @@ export interface SessionProps {
   id?: string;
   title: string;
   description: string;
+  complements?: string;
   buttonText: string;
   buttonHref: string;
   items: SessionItem[];

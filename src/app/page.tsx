@@ -9,27 +9,27 @@ export default function Home() {
   const recursosItems = [
     {
       id: 'cards',
-      title: 'CARDS PARA COLAGEM',
-      description: 'Práticas antirracistas /n para o dia a dia.',
+      title: 'ÁLBUNS DE \n FIGURINHAS DIGITAIS',
+      description: 'Coleções interativas para \n aprender brincando!',
       image: '/foto3.png',
     },
     {
       id: 'desenhos',
-      title: 'DESENHOS PARA PINTAR',
-      description: 'Atividades para crianças /n e adultos.',
+      title: 'DESENHOS E \n CRIAÇÃO ARTÍSTICA',
+      description: 'Colorir, imaginar e criar novas histórias.',
       image: '/foto2.png',
     },
     {
-      id: 'imprimir',
-      title: 'PARA IMPRIMIR',
-      description: 'Pôsteres, mandalas /n e ilustrações.',
-      image: '/foto4.png',
+      id: 'artigos',
+      title: 'TEXTOS E \n CONHECIMENTOS',
+      description: 'Leituras simples para conhecer a história e o mundo.',
+      image: '/foto5.png',
     },
     {
-      id: 'artigos',
-      title: 'ARTIGOS E CONTEÚDOS',
-      description: 'Leituras que despertam /n consciência e empatia.',
-      image: '/foto5.png',
+      id: 'PARA IMPRIMIR',
+      title: 'Recursos pedagogicos \n disponiveis para imprimir',
+      description: 'Pôsteres, mandalas \n e ilustrações.',
+      image: '/foto4.png',
     },
   ];
 
@@ -37,25 +37,25 @@ export default function Home() {
   const lojaItems = [
     {
       id: 'pentes',
-      title: 'PENTES /n PARA CABELO CRESPO',
+      title: 'PENTES \n PARA CABELO CRESPO',
       description: 'Cuidados para a beleza afro.',
       image: '/foto6.png',
     },
     {
       id: 'toucas',
-      title: 'TOUCAS /n DE CETIM',
+      title: 'TOUCAS \n DE CETIM',
       description: 'Proteção e estilo para seus cabelos.',
       image: '/foto7.png',
     },
     {
       id: 'roupas',
-      title: 'ROUPAS /n AFRICANAS',
+      title: 'ROUPAS \n AFRICANAS',
       description: 'Peças que representam e fortalecem.',
       image: '/foto8.png',
     },
     {
       id: 'cuidados',
-      title: 'CUIDADOS /n PARA SEUS CABELOS',
+      title: 'CUIDADOS \n PARA SEUS CABELOS',
       description: 'Produtos que respeitam a natureza.',
       image: '/foto9.png',
     },
@@ -115,25 +115,35 @@ export default function Home() {
         image="/bgImage.png"
       />
 
-      <Session
-        id="recursos"
-        title="RECURSOS"
-        description="Para aprender, refletir e transformar."
-        buttonText="VER TODOS"
-        buttonHref="/recursos"
-        items={recursosItems}
-        bgColor="#e5d3bb"
-      />
+      <div className='bg-[#e5d3bb]'>
+        <Session
+          id="recursos"
+          title="NOSSOS RECURSOS"
+          description="Atividades, leituras e ferramentas para aprender,/n criar e se conhecer."
+          buttonText="VER TODOS"
+          buttonHref="/recursos"
+          items={recursosItems}
+          bgColor="#e5d3bb"
+        />
 
-      <Session
-        id="loja"
-        title="LOJA"
-        description="Produtos que cuidam, representam e fortalecem."
-        buttonText="VER LOJA COMPLETA"
-        buttonHref="/loja"
-        items={lojaItems}
-        bgColor="#f8a69b"
-      />
+        <Session
+          id="loja"
+          title="E-BOOKS INFANTIS"
+          description="Livrinhos digitais para fortalecer/nautoestima, identidade e autocuidado."
+          complements="
+            Autoestima da criança negra./n
+            Cuidados com cabelo e pele./n
+            Histórias com protagonistas negros./n
+            Amor-próprio./n
+            Identidade e pertencimento./n
+            Guias para famílias e educadores
+          "
+          buttonText="CONHEÇA NOSSOS E-BOOKS"
+          buttonHref="/loja"
+          items={lojaItems}
+          bgColor="#f8a69b"
+        />
+      </div>
 
       <ContactSection />
 

@@ -31,7 +31,7 @@ export default function ContactSection({
   }
 
   return (
-    <section className="w-full py-20 px-4 sm:px-8 lg:px-16 bg-[#e5d3bb]">
+    <section className="w-full py-10 px-4 sm:px-8 lg:px-16 bg-[#e5d3bb]">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center justify-between">
 
